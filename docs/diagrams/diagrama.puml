@@ -1,0 +1,4 @@
+@startuml
+Marcos -> Murilo: Olá Murilo
+Murilo --> Marcos: Oi Marcos!
+@enduml
