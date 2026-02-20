@@ -1,0 +1,10 @@
+@startuml
+actor Cliente
+participant Sistema
+participant "Lançamento Financeiro" as Pag
+
+Cliente -> Sistema: Inicia Lançamento
+Sistema -> Pag: Solicita Tipo, Destino, Data, Valor, Forma de Pagamento, Conta, Status e Plano de Conta
+Pag --> Sistema: Gravar Lançamento
+Sistema --> Cliente: Lançamento realizado com Sucesso!
+@enduml
