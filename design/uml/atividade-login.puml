@@ -1,0 +1,12 @@
+@startuml
+start
+:Cliente acessa o app;
+:Preenche Login;
+:Confirma a entrada;
+if (Login correto?) then (sim)
+  :Acesso liberado ao app;
+else (não)
+  :Login Incorreto!;
+endif
+stop
+@enduml
