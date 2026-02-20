@@ -1,0 +1,8 @@
+@startuml
+actor "Usuário" as U
+rectangle Sistema {
+  U --> (Login)
+  U --> (Realizar Lançamento Financeiro)
+  U --> (Consultar Financeiro)
+}
+@enduml
